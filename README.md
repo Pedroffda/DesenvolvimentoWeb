@@ -3,4 +3,4 @@
 Este repositório possui o objetivo de registrar meu progresso com o desenvolvimento web
 utilizando as ferramentas: HTML, CSS e JavaScript
 
-[Iniciante](Pedroffda/Desenvolvimento-Web)
+[Iniciante](Pedroffda/Desenvolvimento-Web/Iniciante)
