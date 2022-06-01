@@ -1,0 +1,99 @@
+body{
+    /*background-color: rgb(34, 34, 34);*/
+    background-color: #ed9539;
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px; /*os elementos não vão se espalhar*/
+    margin: 0 auto;/*site fica no meio quando aumentamos o tamanho*/
+    padding: 15px;
+}
+
+header{
+    display: flex; /*metodo de estilização de facil utilização*/
+    flex-direction: row; /*transforma a lista em linha*/
+    justify-content: space-between; /*cria um espaço entre os elementos*/
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px; /*aproxima os nomes do titulo*/
+}
+
+li{
+    display: inline-block; /*deixa os elementos da tabela em linha*/
+    margin: 25px;
+}
+
+h1{
+    font-weight: 200; /*afinar a fonte do titulo*/
+}
+
+h2{
+    font-size: 54px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: #89c9e6;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #89c9e6;
+    transition: 0.3s all;
+}
+
+#cliente-btn{
+    border: 2px solid black; /*cria borda no cliente*/
+    padding: 2px; /*preenchimento, deixa o nome mais bonito dentro da caixa*/
+    border-radius: 15px; /*arredonda*/
+}
+
+#cliente-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+main{
+    display: flex;
+    flex-direction: row; /*deixa os elementos da main alinhados*/
+    margin-top: 20px; /*puxa o main pra baixo*/
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;   
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #042c54;
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
