@@ -1,0 +1,82 @@
+/*
+CSS (folhas de estilos em cascata) permitem que você especifique qual deve ser a aparência de sua página. 
+A ideia básica é definir qual deve ser o estilo para os elementos que você usa em suas páginas HTML. 
+Enquanto os elementos HTML definem seu conteúdo, os estilos de CSS definem a aparência desse conteúdo.
+
+As regras CSS são como você aplica estilos a elementos HTML. 
+As regras CSS têm um seletor que é usado para expressar qual 
+elemento, ou elementos, deve ser aplicado aos estilos.
+
+A ID e os seletores de classe permitem aplicar estilos a nomes
+de atributo personalizados no seu HTML. 
+Uma ID é usada para definir o estilo de um elemento,
+enquanto classes podem ser usadas para definir o estilo de vários elementos.
+*/
+
+body{
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: monospace;
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+    /*O seletor de :root representa o elemento <html> na página HTML. 
+    Para esse tipo de tarefa, uma melhor prática é definir um conjunto
+    de variáveis CSS globais em uma regra CSS com o seletor :root. 
+    Neste exemplo, você definiu três variáveis coloridas. 
+    Em seguida, você poderá usar essas variáveis em outras regras do CSS.*/
+}
+
+li{
+    list-style: circle;
+}
+.light-theme{
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+.btn{
+    color: var(--bntFontColor);
+    background-color: var(--btnBg);
+}
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+/*
+.list{
+    list-style: square;
+
+    .list é um seletor de classe. Cada elemento HTML que 
+    contém um atributo class definido como list herdará
+    os estilos que são definidos nesse seletor.
+}
+
+#msg{
+    font-family: monospace;
+
+    #msg é um seletor de ID. O elemento HTML cujo atributo id 
+    é definido como msg herdará os estilos que são definidos nesse seletor
+}
+*/
