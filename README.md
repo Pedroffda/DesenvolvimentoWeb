@@ -4,4 +4,5 @@ Este repositório possui o objetivo de registrar meu progresso com o desenvolvim
 utilizando as ferramentas: HTML, CSS e JavaScript
 
 [Formulario Loja Design](Iniciante/FormularioLojaDesign)
-[Dark Mode Design](Iniciante/DarkModeDesign)
+
+[Dark Mode Design](Iniciante/ModoDarkDesign)
