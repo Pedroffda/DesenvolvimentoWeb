@@ -1,0 +1,87 @@
+@media screen and (max-width: 980px) {
+    body{
+        max-width: 1200px; /*os elementos não vão se espalhar*/
+        background-color: red;
+    }
+    .siteBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #89c9e6;
+        border-radius: 15px;
+        text-align: center;
+    }
+    #hiddeBtn{
+        font-family: poppinsregular;
+        display: block;
+        background-color: #89c9e6;
+        border: none;
+        font: bold;
+        font-size: medium;
+        cursor: pointer;
+        width: 100%;
+    }
+    #darkBtn{    
+        font-family: poppinsregular;
+        display: block;
+        background-color: #89c9e6;
+        border: none;
+        font: bold;
+        font-size: medium;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+    }
+    ul{
+        font-family: poppinsregular;
+        display: inline-block;
+        margin: 10px;
+        color: black;
+        font: bold;
+        font-size: medium;
+        text-align: center;
+    }
+    #x{
+        display: flex;
+        flex-direction: column;
+    }
+    #mainBody{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }  
+    #sideBody{
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    p{
+        display: block;
+        align-items: center;
+    }
+    .about{
+        width: 100%;
+    }
+    #register{
+        display: block;
+        text-align: center;
+    }
+    .gallery {  
+        display: none;
+        position: relative;
+    }
+    .gallery .item {
+        display: none;
+    }
+    #pa{
+        display: none;
+    }
+    .textContent{
+        display: block;
+        text-align: center;
+        text-align: justify;
+
+    }
+
+
+}

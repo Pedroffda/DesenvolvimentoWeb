@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/gallery.min.css">
     <link rel="stylesheet" href="./styles/gallery.theme.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 
 </head>
 <body class="ligth-theme">
@@ -64,7 +65,7 @@
             </section>
 
             <aside id="sideBody">
-                <img src="./components/images/pato2.png" alt="duck" title="Pato" width="260" height="315" id="x">
+                <img src="./components/images/pato2.png" alt="duck" title="Pato" width="260" height="315" id="pa">
         
                 <!-- comments -->
                 <h2 id="register">Cadastrar</h2>
