@@ -1,0 +1,64 @@
+body{
+    background-color: #89c9e6;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+button#delete{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-left: 600px;
+    margin-bottom: 20px;
+    background: #359942;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button#intDelete{
+    display: block;
+    width: 60px;
+    height: 50px;
+    float: left;
+    background-color: white;
+    border: 2px red solid;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+button#intDelete:hover{
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+button#intAlt{
+    display: block;
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border: 2px blue solid;
+    border-radius: 5px;
+    color: blue;
+    cursor: pointer;
+    text-align: center;
+}
+button#intAlt:hover{
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+#y{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

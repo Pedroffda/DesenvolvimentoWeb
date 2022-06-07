@@ -30,10 +30,13 @@
         //SE NÃO TIVER NENHUM ERRO ENVIAR PARA BANDO DE DADOS E PARA O OBRIGADO
        if(($erroNome=="") && ($erroEmail=="")){
 
+        /*usada para coletar dados de formulário após enviar um formulário HTML com method="post". $_POST também é amplamente usado para passar variáveis.*/
+
         $nome = limparPost($_POST['nome']);
         $cor = $_POST['cor'];
         $sexo = $_POST['sexo'];        
 
+        /*insere os elementos coletados no formulario no banco de dados*/
         $sql = "INSERT INTO cadastros (id, nome, cor, sexo , email)
         VALUES (null,'$nome','$cor', '$sexo' ,'$email')";
     
@@ -44,7 +47,7 @@
         }
     
         $conn->close();
-
+        /*se tudo der certo leva o usuario para uma outra pagina*/
         header('Location: obrigado.php');
     } 
     }
@@ -54,6 +57,7 @@
         $valor = htmlspecialchars($valor);
         return $valor;
     }
+
 ?>
 
 <!DOCTYPE html>

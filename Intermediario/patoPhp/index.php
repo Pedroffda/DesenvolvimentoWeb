@@ -85,6 +85,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
