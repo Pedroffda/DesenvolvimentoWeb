@@ -1,7 +1,6 @@
 @media screen and (max-width: 980px) {
     body{
         max-width: 1200px; /*os elementos não vão se espalhar*/
-        background-color: red;
     }
     .siteBar{
         display: flex;
