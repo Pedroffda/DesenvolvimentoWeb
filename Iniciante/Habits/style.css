@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  /* background-color: #09090a;
+  color: white; */
+  /*   
+  display: grid;
+  place-items: center; */
+
+  height: 100vh;
+}
+
+:root {
+  --green: #00ff00;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
+  --btnBg: var(--white);
+  --btnFontColor: var(--white);
+}
+
+.ligth-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--black);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  position: fixed;
+  width: 100%;
+}
+
+button {
+  padding: 18px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf8;
+  background-color: transparent;
+  /* color: white; */
+  color: var(--btnFontColor);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+#form-habits {
+  display: flex;
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+
+.habits {
+  /* padding: 48px; */
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.habit {
+  /* padding: 10px; */
+
+  /* border: 1px solid; */
+
+  height: 64px;
+  width: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 42px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  height: 64px;
+  width: 64px;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+
+  background: #18181b;
+}
+
+input:checked {
+  /* tailwind/violet/500 */
+
+  background: #8b5cf6;
+  /* tailwind/violet/400 */
+
+  border: 2px solid #a78bfa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
+}
